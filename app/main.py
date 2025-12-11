@@ -40,8 +40,3 @@ class Dog(Animal):
 
 def feed_animals(animals: list) -> int:
     return sum(animal.feed() for animal in animals)
-
-cat = Cat("Cat", False)
-lion = Animal("Lion", 25, True)
-dog = Dog("Dog")
-feed_animals([cat, lion, dog]) #32
